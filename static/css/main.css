@@ -104,6 +104,8 @@ body { background-color: #f8f8f8; color: #3b3d44; }
 .content-body h1 { font-size: 60pt; }
 .content-body h2 { font-size: 34pt; }
 .content-body hr { background-color: #fcbc05; height: 2px; width: 75%; margin: 2.93rem auto; opacity: 0.3; }
+.content-body a { color: #fcbc05; font-weight: 600; transition: 0.3s all; text-decoration: none; }
+.content-body a:hover { color: #e3a702; }
 
 /*
  * FOOTER
