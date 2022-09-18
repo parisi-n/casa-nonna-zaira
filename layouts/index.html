@@ -1,0 +1,62 @@
+{{ define "main" }}
+
+<!-- Slideshow container -->
+<div class="slider-container">
+
+    {{ range .Site.Data.home_slideshow }}
+        {{ $text := .text }}
+
+        {{ if .image }}
+            {{ $img := printf "images/%s" .image }}
+
+            <div class="slide-image fade" style="background: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url('{{ $img | absURL }}') no-repeat; display: inline-block; background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat;">
+            </div>
+        {{end}}
+    {{end}}
+    
+    <div class="main-title-container">
+        <div class="main-title">
+            {{ .Site.Title }}<span>{{ .Site.Params.location }}</span>
+        </div>
+        
+        <div class="main-subtitle">
+            {{ .Site.Params.subtitle }}
+        </div>
+    </div>
+
+    <div class="book-now" style="text-align: center">
+        <a class="w3-button w3-book-now">Prenota ora</a>
+    </div>
+    
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+</div>
+<br>
+
+{{ $first_posts := sort ( .Pages.ByWeight ) }}
+
+{{ range $index, $element := first 2 $first_posts }}
+    {{ partial "partials/index_post_box.html" (dict "context" . "index" $index ) }}
+{{ end }}
+
+<div class="" style="height: 75vh; background: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url('images/cover_2.jpg') no-repeat; display: block; background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat;"></div>
+
+{{ $second_posts := ( .Pages.ByWeight | symdiff ( first 2 .Pages.ByWeight ) ) }}
+    
+{{ range $index, $element := $second_posts }}
+    {{ partial "partials/index_post_box.html" (dict "context" . "index" ( add 2 $index ) ) }}
+{{ end }}
+
+<div class="" style="height: 75vh; background: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url('images/cover_3.jpg') no-repeat; display: block; background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat;"></div>
+
+{{ $third_posts := ( .Pages.ByWeight | symdiff ( first 5 .Pages.ByWeight ) ) }}
+    
+{{ range $index, $element := $third_posts }}
+    {{ partial "partials/index_post_box.html" (dict "context" . "index" ( add 5 $index ) ) }}
+{{ end }}
+<br/>
+<br/>
+<br/>
+{{ end }}

@@ -1,0 +1,29 @@
+baseURL = 'http://localhost:1313'
+languageCode = "it-IT"
+title = "Casa Nonna Zaira"
+
+[params]
+    location =  "Ingurtosu"
+    subtitle = "La tua casa lontano da casa."
+
+[menu]
+  [[menu.main]]
+    name = "La casa"
+    url = "/#la-casa"
+    weight = 2
+  [[menu.main]]
+    name = "Ingurtosu"
+    url = "/#ingurtosu"
+    weight = 3
+  [[menu.main]]
+    name = "Le miniere"
+    url = "/#le-miniere"
+    weight = 4
+  [[menu.main]]
+    name = "Le dune ed il Mare"
+    url = "/#le-dune-ed-il-mare"
+    weight = 5
+  [[menu.main]]
+    name = "La Natura"
+    url = "/#la-natura"
+    weight = 3

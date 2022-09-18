@@ -1,0 +1,14 @@
+[
+        {
+            "image" : "cover_1.jpg" ,
+            "text" : "La Natura"
+        } ,
+        {
+            "image" : "cover_2.jpg" ,
+            "text" : "Il Mare"
+        } ,
+        {
+            "image" : "cover_3.jpg" ,
+            "text" : "Il Mare"
+        }
+]

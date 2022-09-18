@@ -1,0 +1,38 @@
+<div style="text-align: center" id='{{ .context.Slug }}' name='{{ .context.Slug }}'>
+
+    <div class="section-container">
+
+        {{ if eq (mod .index 2) 0 }}
+        <div class="image-container right" style="background: url('{{ .context.Permalink }}{{ .context.Params.image }}') no-repeat"></div>
+
+        <div class="text-container">
+            <div class="number-bookmark">{{ printf "%02d" ( add .index 1 ) }}</div>
+            
+            <div class="title">{{ .context.Title }}</div>
+            <div class="subtitle">{{ .context.Params.subtitle }}</div>
+            
+            <p>{{ .context.Params.description | markdownify }}</p>
+            
+            <div class="explore-button" style="text-align: right">
+                <a href="{{ .context.Permalink }}" class="w3-button w3-yellow">Esplora</a>
+            </div>
+        </div>
+        {{else}}
+        <div class="text-container">
+            <div class="number-bookmark">{{ printf "%02d" ( add .index 1 ) }}</div>
+            
+            <div class="title">{{ .context.Title }}</div>
+            <div class="subtitle">{{ .context.Params.subtitle }}</div>
+            
+            <p>{{ .context.Params.description | markdownify }}</p>
+            
+            <div class="explore-button" style="text-align: left">
+                <a href="{{ .context.Permalink }}" class="w3-button w3-yellow">Esplora</a>
+            </div>
+        </div>
+        
+        <div class="image-container left" style="background: url('{{ .context.Permalink }}{{ .context.Params.image }}') no-repeat"></div>
+        {{end}}
+
+    </div>
+</div>

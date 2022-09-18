@@ -1,0 +1,55 @@
+<div id="nav-border" class="container">
+    
+    <img class="logo" src='{{ "images/casa_nonna_zaira_logo.png" | absURL }}' />
+    
+    <nav id="nav-desktop" class="nav justify-content-center">
+        <a class="nav-link active" style='padding-top: 12px;' href="/" /><img src='{{ "images/home_icon.svg" | absURL }}' class='home-logo' /></a>
+        {{ $current := . }}
+        {{ range .Site.Menus.main }}
+        
+            {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+            {{ $active = or $active (eq .Name $current.Title) }}
+            {{ $active = or $active (and (eq .Name "Blog") (eq $current.Section "post")) }}
+            {{ $active = or $active (and (eq .Name "Tags") (eq $current.Section "tags")) }}
+        
+            <a class="nav-link" href="{{ .URL }}">
+            {{ $text := print .Name | safeHTML }}
+            {{ $text }}
+            </a>
+        {{ end }}
+        
+        <a class="nav-link book-now" href="prenotazione/">Prenota</a>
+    </nav>
+    
+    <nav id="nav-mobile" onclick="openNav()"><img src='{{ "images/menu_icon.svg" | absURL }}' width="45px" /></nav>
+    
+    <div id="nav-mobile-menu" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+          
+        <a href="/"><img src='{{ "images/home_icon.svg" | absURL }}' class='home-logo' /></a>
+          
+        {{ $current := . }}
+        {{ range .Site.Menus.main }}
+        
+            {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+            {{ $active = or $active (eq .Name $current.Title) }}
+            {{ $active = or $active (and (eq .Name "Blog") (eq $current.Section "post")) }}
+            {{ $active = or $active (and (eq .Name "Tags") (eq $current.Section "tags")) }}
+        
+            <a href="{{ .URL }}">
+            {{ $text := print .Name | safeHTML }}
+            {{ $text }}
+            </a>
+        {{ end }}
+          
+        <a href="#" class="w3-button w3-yellow w3-book-now" style="max-width: 300px; margin: 0 auto; margin-top: 2.91rem;">Prenota ora</a>
+        
+        <p style="margin-top: 1.21rem;" class="text-center">Giuliana ❤️</p>
+      </div>
+
+    </div>
+</div>

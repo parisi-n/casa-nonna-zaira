@@ -1,0 +1,202 @@
+/* 
+    * * * * * * * * * * * * * * * * * * * * 
+
+    CSS _ Casa
+
+    * * * * * * * * * * * * * * * * * * * * 
+
+    Autore     : Nicola Parisi
+
+    Pavia, 17/09/2022
+*/
+
+body { background-color: #f8f8f8; color: #3b3d44; }
+
+.w3-button { color: #fff !important; padding: 0.9rem 1.9rem !important; border-radius: 5px; transition: 0.2s ease !important; cursor: pointer; font-weight: 600; letter-spacing: 1px; }
+.w3-button:hover { color: #fff !important; }
+.w3-book-now, .w3-yellow { background-color: #fcbc05 !important; }
+.w3-book-now:hover, .w3-yellow:hover { background-color: #e3a702 !important; }
+.slider-container .book-now { font-family: Montserrat, serif; position: absolute; bottom: 10%; width: 100%; }
+
+/*
+ * NAV
+ */
+
+#nav-border { height: 5rem; position: fixed; width: 100%; background-color: #f2f2f2; z-index: 1; box-shadow: 0 5px 12px 0 rgb(0 0 0 / 7%); }
+#nav-desktop { text-align: right; }
+#nav-desktop .nav-link { color: #554948; display: inline-flex; font-family: Montserrat, sans-serif; font-size: 16px; font-weight: 400; padding: 30px; transition: all 0.25s ease-in-out; height: 5rem; border-top: 4px solid #00000000; }
+#nav-desktop .nav-link:hover { background-color: #fcbc0566 !important; }
+#nav-desktop .home-logo { height: 35px; filter: brightness(80%) contrast(120%); }
+
+#nav-desktop .nav-link.active { border-top: 4px solid #fcbc05; background-color: initial; }
+
+#nav-desktop .nav-link.book-now { background-color: #fcbc0599; border-top: 4px solid #fcbc05; text-decoration: none; }
+#nav-desktop .nav-link.book-now:hover { background-color: #e3a702; }
+
+#nav-border .logo { width: 105px; position: absolute; top: 6px; left: 21px; }
+
+#nav-mobile, #nav-mobile-menu { display: none; }
+
+#nav-mobile-menu .home-logo { width: 35px; }
+#nav-mobile-menu .home-logo:hover { filter: brightness(80%) contrast(120%); transition: 0.3s ease-in-out; }
+
+/*
+ * TITOLO
+ */
+.main-title-container {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    color: #fff;
+}
+
+.main-title {
+    font-size: 67px;
+    letter-spacing: 2px;
+    font-family: "Montserrat", Helvetica, sans-serif;
+}
+.main-title span {
+    opacity: 0.45;
+}
+.main-title::after {
+    content: '';
+    background-color: #ffffff66;
+    display: block;
+    height: 3px;
+    margin: 0.325em 0 0.5em 0;
+    width: 100%;
+}
+
+.main-subtitle {
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+
+/*
+ * SECTION CONTAINER
+ */
+#content { padding-top: 5rem; }
+
+.section-container { margin: 1.5rem 2.9rem; display: inline-flex; width: 75%; max-width: 1100px; }
+.section-container .image-container { width: 45%; height: 75vh; margin: 3.5rem; background-size: cover !important; background-position: 50% !important;}
+.section-container .image-container.right { margin-right: -2.5rem;  }
+.section-container .image-container.left { margin-left: -2.5rem;  }
+.section-container .text-container { width: 55%; margin: 0.5rem; margin-left: -1.5rem; background-color: #fefefe; box-shadow: 0 5px 12px 0 rgb(0 0 0 / 7%); position: relative; min-height: 768px; }
+.section-container .text-container .number-bookmark { position: absolute; top: 0; left: 0; font-size: 275px; font-family: Montserrat, sans-serif; color: rgba(224,224,224,0.3); line-height: 0.75; }
+.section-container .text-container .title, h1 { color: #fcbc05; font-weight: 600; text-align: center; font-size: 38pt; letter-spacing: 0px; margin: 5.12rem 0 0.51rem; font-family: Montserrat, serif; }
+.section-container .text-container .subtitle, h2 { color: #d8d8d8; text-align: center; opacity: 0.8; font-size: 23pt; margin-bottom: 3.51rem; margin-top: -1.58rem; }
+.section-container .text-container p { font-size: 14pt; text-align: left; margin: 0.91rem 1.72rem; line-height: 32px; }
+.section-container .explore-button { position: absolute; bottom: 2.35rem; width: 100%; padding: 0 3.35rem; }
+
+/*
+ * POST
+ */
+.image-box { height: 780px; width: 100%; margin: 2.74rem 0; position: relative; }
+.image-box img { height: 100%; position: absolute; left: 50%; text-align: center; }
+.image-box .image-align-right { transform: translateX(-15%); }
+.image-box .image-align-left { transform: translateX(-85%); }
+.image-box .image-align-center { transform: translateX(-50%); }
+.image-box:has( > .image-align-center ) { height: 1024px; }
+.content-body { margin: 1.73rem 17.8% 5.73rem; }
+.content-body p { margin: 1.31rem 0 0.73rem; font-size: 16pt; line-height: 38px; }
+.content-body h1 { font-size: 60pt; }
+.content-body h2 { font-size: 34pt; }
+.content-body hr { background-color: #fcbc05; height: 2px; width: 75%; margin: 2.93rem auto; opacity: 0.3; }
+
+/*
+ * FOOTER
+ */
+.footer { background-color: #c0c0c0 !important; color: #554948; text-align: center; padding: 1.3rem 2.9rem; font-weight: 600; }
+.payment-methods { padding: 1.73rem; }
+.payment-methods img { width: 35px; margin: 0 7px; }
+.payment-methods .width-logo { width: 75px;}
+
+/**
+ * SCROLLBAR
+ */
+::-webkit-scrollbar { width: 21px; }
+::-webkit-scrollbar-track { background: #f8f8f8; }
+::-webkit-scrollbar-thumb { background: #fcbc05; border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: #e3a702; }
+
+@media (max-width: 49.9em) {
+    
+/*
+ * NAV
+ */
+#nav-desktop { display: none; }
+#nav-mobile { display: block; position: absolute; top: 20%; right: 10px; cursor: pointer; }
+#nav-mobile-menu { display: block; }
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(242,242,242); /* Black fallback color */
+  background-color: rgba(242, 242, 242, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+.overlay-content p {
+    color: #554948; text-align: center; padding: 1.3rem 2.9rem; font-weight: 600; width: 100%;
+}
+
+/* The navigation links inside the overlay */
+.overlay a { padding: 8px; text-decoration: none; font-size: 28px; color: #554948; display: block; /* Display block instead of inline */ transition: 0.3s; /* Transition effects on hover (color) */}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #fcbc05;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.slider-container .book-now { top: 80%; }
+
+/*
+ * POST
+ */
+.section-container { display: block; width: 85%; }
+.section-container .image-container { width: 90%; margin-bottom: 0; }
+.section-container .text-container { width: 90%; margin: 0 1.5rem; }
+.section-container .text-container .title, h1 { margin: 0; padding: 0 1.5rem; }
+.section-container .text-container .subtitle, h2 { margin-bottom: 1.51rem; }
+.section-container .text-container p { margin: 0 1.97rem 2.51rem; }
+.section-container .explore-button { position: initial; padding: 0 0 1.5rem; text-align: center !important; }
+.section-container .text-container .number-bookmark { display: none; }
+.section-container .image-container.left, .section-container .image-container.right { margin: 0 1.5rem; }
+.section-container:has( > .left ) { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
+}

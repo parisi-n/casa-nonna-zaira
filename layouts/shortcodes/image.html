@@ -1,0 +1,5 @@
+{{ $src := .Get "src" }}
+{{ $align := .Get "align" }}
+<div class="image-box">
+    <img src="images/{{ $src }}" class="image-align-{{ $align }}" />
+</div>
