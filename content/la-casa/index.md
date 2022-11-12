@@ -9,13 +9,13 @@ weight: 1
 
 Difficile non trovarsi a proprio agio.
 
-_Piede-da-terre_ indipendente situato in uno stabile costruito nel 1950 come alloggio per le famiglie degli impiegati che gravitavano attorno alle miniere, con al piano I la foresteria ― viene acquistata (in condizioni ben diverse da quelle attuali) il _6 Giugno del 1983_.
+_Pied-a-terre_ indipendente situato in uno stabile costruito nel 1950 come alloggio per le famiglie degli impiegati che gravitavano attorno alle miniere, con al piano I la foresteria ― viene acquistata (in condizioni ben diverse da quelle attuali) il _6 Giugno del 1983_.
 
-A trasformarla da semplice _ripostiglio_ a casa accogliente, capace di accogliere lunghe tavolate e riunioni familiari, concorrono **i figli di Nonna Zaira**, che con spirito di sacrificio e passione collaborano nella realizzazione della maggior parte dei lavori edili necessari per rendere l'appartamento abitabile.
+A trasformarla da semplice _ripostiglio_ a casa accogliente, capace di ospitare lunghe tavolate e riunioni familiari, concorrono **i figli di Nonna Zaira**, che con spirito di sacrificio e passione collaborano nella realizzazione della maggior parte dei lavori edili necessari per rendere l'appartamento abitabile.
 
 **Nonna Zaira** nasceva il XX YY del 1928 ed ha abitato, prima dello sposalizio con **Roberto** ed il successivo trasferimento nella cittadina di Arbus, in una casa nei pressi di **Villa Ginestra** ― all'entrata di Ingurtosu.
 
-Organizzare con cadenza quasi regolari grandi tavolate riuscendo a riunire tutti i figli e nipoti nella _location estiva_ di Ingurtosu ― suo luogo di nascita ― è stato negli ultimi anni la sua _mission_.
+Organizzare con cadenze quasi regolari grandi tavolate riuscendo a riunire tutti i figli e nipoti nella _location estiva_ di Ingurtosu ― suo luogo di nascita ― è stato negli ultimi anni la sua _mission_.
 
 Il nome della casa è solo una logica conseguenza: **Casa Nonna Zaira**.
 
@@ -39,7 +39,7 @@ Fornita dei più comuni elettrodomestici ― la casa risulta idonea per soggiorn
 
 * * *
 
-La camera matrimoniale, spaziosa ed arieggiata, offre momenti di intimità con ricordi di pino - con pezzi di mobilia artiginali ed unici.
+La camera matrimoniale, spaziosa ed arieggiata, offre momenti di intimità con ricordi di pino - con pezzi di mobilia artigianali ed unici.
 
 {{< image src="matrimoniale_1.jpg" align="left" >}}
 
@@ -83,7 +83,7 @@ A pochi passi ― quel che rimane della soprannominata **zona residenziale** off
 
 Per i più curiosi ― verso Piscinas ― il percorso che porta **alla scuola** è un'altra passeggiata nella natura.
 
-Non distante **l'Ospedale di Lord Byron** ― inaccessibile ― racconta ancora del via vai di persone nel suo periodo di massimo funzionamento.
+Non distante **l'Ospedale di Lord Brassey** ― inaccessibile ― racconta ancora del via vai di persone nel suo periodo di massimo funzionamento.
 
 Attenzione particolare deve essere prestata durante le passeggiate notturne: potreste infatti imbattervi in qualche rappresentate di **cervo** di ritorno dai suoi cerbiatti.
 
@@ -91,6 +91,6 @@ Attenzione particolare deve essere prestata durante le passeggiate notturne: pot
 
 Il soggiorno nella **Casa Nonna Zaira** può essere scandito ― oltre che dalle visite **al bellissimo Mare di Piscinas** ― anche da pause di lettura con letteratura e narrativa locale.
 
-**Chi era Lord Byron?**
+**Chi era Lord Brassey?**
 
 _Gli ospiti non lascino la casa senza prima averne conosciuto la storia_.
