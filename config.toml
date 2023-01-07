@@ -1,5 +1,5 @@
 # Tema liberamente ispirato da: https://www.thepeakhr.com/
-baseURL = 'http://casanonnazaira.netlify.app/'
+baseURL = 'https://casanonnazaira.netlify.app/'
 languageCode = "it-IT"
 title = "Casa Nonna Zaira"
 
