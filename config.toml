@@ -22,7 +22,7 @@ title = "Casa Nonna Zaira"
     weight = 4
   [[menu.main]]
     name = "Le dune ed il Mare"
-    url = "/#le-dune-ed-il-mare"
+    url = "/#le-dune-il-mare"
     weight = 5
   [[menu.main]]
     name = "La Natura"
