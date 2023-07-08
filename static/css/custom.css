@@ -27,6 +27,14 @@
     .fixed-nav {
         background-color: #3b3d4499 !important;
     }
+    
+    /*
+     * Scritta bianca solo nel menù laterale perchè negli schermi piccoli
+     * il menù laterale diventa superiore ed è a sfondo chiaro.
+     */
+    .fn-item {
+        color: #f0f0f0 !important;
+    }
 }
 
 .fixed-nav a {
