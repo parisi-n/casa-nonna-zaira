@@ -8,6 +8,8 @@
     margin: 0 -5%;
 }
 
+.fixed-nav { background-color: #f0f0f0 !important; }
+
 @media (min-width: 49.9em) { 
     .post-content img.portrait-img {
         position: relative;
@@ -21,10 +23,10 @@
         left: -50%;
         margin: 2.73em 0;
     }
-}
-
-.fixed-nav {
-    background-color: #3b3d4499 !important;
+    
+    .fixed-nav {
+        background-color: #3b3d4499 !important;
+    }
 }
 
 .fixed-nav a {
@@ -41,6 +43,7 @@ p {
 p a {
     font-weight: bold !important;
     border-bottom: 3px solid;
+    text-decoration: none;
 }
 
 a.btn {
