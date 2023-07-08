@@ -6,7 +6,7 @@ header_menu: true
 highlight: true
 ---
 
-E' possibile prenotare un soggiorno tramite **prenotazione diretta** - direttamente dal modulo sottostante e **previa verifica delle date** - al prezzo di 50€/notte.
+E' possibile prenotare un soggiorno tramite **prenotazione diretta** - direttamente dal modulo sottostante e **previa verifica delle date** - al prezzo di 55€/notte.
 
 Il pagamento potrà essere effettuato al momento del check-in mediante carta di debito o credito o, a piacere, a mezzo contanti.
 
