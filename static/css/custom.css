@@ -33,7 +33,7 @@
      * il menù laterale diventa superiore ed è a sfondo chiaro.
      */
     .fn-item {
-        color: #f0f0f0 !important;
+        color: #f0f0f0;
     }
 }
 
