@@ -5,6 +5,7 @@
 {{ $src := ( printf "%s/%s" "images" (.Get "src") ) }}
 
 <img src="{{ $src }}" alt="{{ $alt }}"
+     loading="lazy"
      {{ if $type }}
         class="portrait-img"
     {{end}} />
