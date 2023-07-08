@@ -1,0 +1,82 @@
+/* 
+    Created on : Jul 3, 2023, 8:27:13 PM
+    Author     : npari
+*/
+
+.post-content img {
+    max-width: 110%;
+    margin: 0 -5%;
+}
+
+@media (min-width: 49.9em) { 
+    .post-content img.portrait-img {
+        position: relative;
+        max-width: 100%;
+        left: -1%
+    }
+    
+    .post-content img {
+        position: relative;
+        max-width: 200%;
+        left: -50%;
+        margin: 2.73em 0;
+    }
+}
+
+.fixed-nav {
+    background-color: #3b3d4499 !important;
+}
+
+.fixed-nav a {
+    margin: 0.5rem;
+}
+
+p {
+    line-height: 2.1 !important;
+    font-size: 1em;
+}
+
+.site-footer a { border: 0px; }
+
+p a {
+    font-weight: bold !important;
+    border-bottom: 3px solid;
+}
+
+a.btn {
+    margin: 2rem 0.6rem 0 !important;
+}
+
+.btn-highlight {
+    background-color: #4CAF50 !important;
+    margin: 0.3rem;
+}
+
+.btn-highlight:hover {
+    background-color: #f44336!important
+}
+
+.fn-item-highlight {
+    color: var( --highlight ) !important;
+}
+
+.fn-item-highlight:hover {
+    color: #f44336 !important;
+}
+
+/*
+    FOOTER
+*/
+.footer { background-color: #c0c0c0 !important; color: #554948; text-align: center; padding: 1.3rem 2.9rem; font-weight: 600; }
+.payment-methods { padding: 1.73rem; }
+.payment-methods img { width: 35px; margin: 0 7px; }
+.payment-methods .width-logo { width: 75px;}
+
+
+/*
+    SCROLLBAR
+ */
+::-webkit-scrollbar { width: 21px; }
+::-webkit-scrollbar-track { background: #f8f8f8; }
+::-webkit-scrollbar-thumb { background: #fcbc05; border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: #e3a702; }

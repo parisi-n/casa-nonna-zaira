@@ -1,0 +1,10 @@
+<!-- implementare type="rounded" -->
+{{ $alt := (cond (ne (.Get "alt") nil) (.Get "caption") (.Get "alt") ) }}
+{{ $style := .Get "style" }}
+{{ $type := .Get "type" }}
+{{ $src := ( printf "%s/%s" "images" (.Get "src") ) }}
+
+<img src="{{ $src }}" alt="{{ $alt }}"
+     {{ if $type }}
+        class="portrait-img"
+    {{end}} />

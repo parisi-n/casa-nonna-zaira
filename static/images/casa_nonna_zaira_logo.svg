@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="17.700001"
+   inkscape:export-xdpi="17.700001"
+   inkscape:export-filename="C:\Users\npari\Documents\NetBeans Projects\Websites\casaNonnaZaira_HugoGIT_v2\static\images\casa_nonna_zaira_logo.png"
+   sodipodi:docname="casa_nonna_zaira_logo.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 183.70891 110.38152"
+   height="110.38152mm"
+   width="183.70891mm">
+  <defs
+     id="defs2">
+    <rect
+       x="81.310532"
+       y="101.39889"
+       width="49.979401"
+       height="19.777945"
+       id="rect843" />
+    <rect
+       id="rect837"
+       height="70.303574"
+       width="145.8988"
+       y="100.54167"
+       x="45.357143" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:window-height="1017"
+     inkscape:window-width="1920"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="247.28451"
+     inkscape:cx="387.98196"
+     inkscape:zoom="0.98994949"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-12.844959,-65.005664)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <ellipse
+       inkscape:export-ydpi="17.700001"
+       inkscape:export-xdpi="17.700001"
+       ry="51.404762"
+       rx="88.068451"
+       cy="120.19643"
+       cx="104.69941"
+       id="path833"
+       style="fill:#f8f8f8;fill-rule:evenodd;stroke:#003366;stroke-width:7.572;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.650602;paint-order:stroke fill markers;fill-opacity:1" />
+    <text
+       transform="translate(-15.192316,-14.603212)"
+       y="0"
+       x="31.651712"
+       style="font-size:30.3389px;line-height:0.95;font-family:sans-serif;letter-spacing:0px;white-space:pre;shape-inside:url(#rect837);fill:#003366;fill-opacity:1;stroke:#003366;stroke-opacity:1;"
+       id="text835"
+       xml:space="preserve"><tspan
+         x="90.782385"
+         y="123.66928"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30.3389px;font-family:'Blackadder ITC';-inkscape-font-specification:'Blackadder ITC';text-align:center;text-anchor:middle;fill:#003366;fill-opacity:1;stroke:#003366;stroke-opacity:1">Casa
+</tspan></tspan><tspan
+         x="47.644262"
+         y="155.17422"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30.3389px;font-family:'Blackadder ITC';-inkscape-font-specification:'Blackadder ITC';text-align:center;text-anchor:middle;fill:#003366;fill-opacity:1;stroke:#003366;stroke-opacity:1">Nonna Zaira</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text841"
+       style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;white-space:pre;shape-inside:url(#rect843);" />
+  </g>
+</svg>
