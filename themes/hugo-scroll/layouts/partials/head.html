@@ -14,19 +14,6 @@
 {{ $stylesheet := slice $stylesheetNormalize $stylesheetFA $stylesheetFonts $stylesheetGeneric $stylesheetScreen | resources.Concat "css/style.css" | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $stylesheet.Permalink }}" type="text/css" integrity="{{ $stylesheet.Data.Integrity }}" />
 
-{{/* Processo l'immagine per renderla compatibile con Whatsapp: max 256x256 - 300kb; uso newSctrach per portare il link fuori dal Range */ -}}
-{{ $image := .Resources.GetMatch ( printf "%s" .Params.image ) -}}
-{{ $data := newScratch -}}
-    
-{{ with $image -}}
-    {{ $cover_thumbnail := $image.Resize "854x q90" -}}
-    {{ $data.Set "cover_thumbnail_link" $cover_thumbnail.Permalink -}}
-{{ end -}}
-
-{{/* Guida: https://www.skcript.com/svr/perfect-seo-meta-tags-with-hugo/ */ -}}
-
-{{ $img := (cond ( eq .Type "article") ( ( ( printf "%s" ( $data.Get "cover_thumbnail_link" ) ) ) ) ( .Site.Params.image | absURL ) ) -}}
-
 <meta name="application-name" content="{{ .Site.Params.meta.title }}" />
 <meta name="description" content="{{ .Site.Params.meta.description }}" />
 <meta name="author" content="Nicola Parisi" /> 
@@ -37,7 +24,7 @@
 <meta name="news_keywords" content="{{ .Site.Params.meta.keywords }}" />
 
 {{/* Open Graph data */}}
-<meta property="og:image" content="{{ $img }}" />
+<meta property="og:image" content="{{ .Params.image }}" />
 <meta property="og:site_name" content="{{ .Site.Params.meta.title }}" />
 <meta property="og:title" content="{{ .Site.Params.meta.title }}" />
 <meta property="og:description" content="{{ .Site.Params.meta.description }}" />
