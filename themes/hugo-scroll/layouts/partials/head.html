@@ -24,7 +24,7 @@
 <meta name="news_keywords" content="{{ .Site.Params.meta.keywords }}" />
 
 {{/* Open Graph data */}}
-<meta property="og:image" content="{{ .Params.image }}" />
+<meta property="og:image" content="{{ .Site.Params.image | absURL }}" />
 <meta property="og:site_name" content="{{ .Site.Params.meta.title }}" />
 <meta property="og:title" content="{{ .Site.Params.meta.title }}" />
 <meta property="og:description" content="{{ .Site.Params.meta.description }}" />
