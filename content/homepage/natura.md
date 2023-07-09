@@ -13,7 +13,7 @@ A prescindere da dove andrete, potrete apprezzare sentieri ricavati nel verde, p
 
 {{< image src="natura/cespuglio.jpg" alt="" type="portrait">}}
 
-
+Potreste trovare anche refrigerio sotto l'ombra creata dalla macchia mediterranea, in un assolato giorno di metà Agosto.
 
 {{< image src="natura/cespuglio_incontaminato.jpg" alt="">}}
 

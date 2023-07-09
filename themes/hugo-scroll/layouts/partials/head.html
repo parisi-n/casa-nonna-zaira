@@ -1,23 +1,8 @@
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 <title>{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}</title>
-
-{{ with .Site.Params.favicon }}
-  <link rel="shortcut icon" href="{{ . | absURL }}" type="image/png"
-/>{{ end }}
-
-{{ with .Site.Params.description }}
-  <meta name="description" content="{{ . }}"
-/>{{ end }}
-{{ with .Site.Params.meta.keywords }}
-  <meta name="keywords" content="{{ . }}"
-/>{{ end }}
-<meta name="referrer" content="no-referrer-when-downgrade" />
-
-<meta name="HandheldFriendly" content="True" />
-<meta name="MobileOptimized" content="320" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 {{ $stylesheetNormalize := resources.Get "css/normalize.css" }}
 {{ $stylesheetFA := resources.Get "css/fork-awesome.css" }}
@@ -29,9 +14,46 @@
 {{ $stylesheet := slice $stylesheetNormalize $stylesheetFA $stylesheetFonts $stylesheetGeneric $stylesheetScreen | resources.Concat "css/style.css" | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $stylesheet.Permalink }}" type="text/css" integrity="{{ $stylesheet.Data.Integrity }}" />
 
-{{ template "_internal/opengraph.html" . }}
-{{ template "_internal/twitter_cards.html" . }}
-{{ template "_internal/schema.html" . }}
+{{/* Processo l'immagine per renderla compatibile con Whatsapp: max 256x256 - 300kb; uso newSctrach per portare il link fuori dal Range */ -}}
+{{ $image := .Resources.GetMatch ( printf "%s" .Params.image ) -}}
+{{ $data := newScratch -}}
+    
+{{ with $image -}}
+    {{ $cover_thumbnail := $image.Resize "854x q90" -}}
+    {{ $data.Set "cover_thumbnail_link" $cover_thumbnail.Permalink -}}
+{{ end -}}
+
+{{/* Guida: https://www.skcript.com/svr/perfect-seo-meta-tags-with-hugo/ */ -}}
+
+{{ $img := (cond ( eq .Type "article") ( ( ( printf "%s" ( $data.Get "cover_thumbnail_link" ) ) ) ) ( .Site.Params.image | absURL ) ) -}}
+
+<meta name="application-name" content="{{ .Site.Params.meta.title }}" />
+<meta name="description" content="{{ .Site.Params.meta.description }}" />
+<meta name="author" content="Nicola Parisi" /> 
+<meta name="language" content="Italiano">
+<meta name="url" content="" />
+<meta name="robots" content="index,follow" /> 
+<meta name="googlebot" content="index,follow" />
+<meta name="news_keywords" content="{{ .Site.Params.meta.keywords }}" />
+
+{{/* Open Graph data */}}
+<meta property="og:image" content="{{ $img }}" />
+<meta property="og:site_name" content="{{ .Site.Params.meta.title }}" />
+<meta property="og:title" content="{{ .Site.Params.meta.title }}" />
+<meta property="og:description" content="{{ .Site.Params.meta.description }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:locale" content="it">
+
+{{/* In caso di og:article si possono specificare ulteriori parametri */}}
+<meta property="og:type" content="landing" />
+<meta property="article:author" content="Nicola Parisi" />
+<meta property="article:tags" content="{{ .Site.Params.meta.keywords }}" /> 
+<meta property="article:published_time" content="01/07/2023 10:40" /> 
+
+{{/* Link */}}
+<link rel="canonical" href="{{ .Permalink }}" itemprop="url" />
+<link rel="shortcut icon" href="{{ "images/favicon.ico" | absURL }}" type="image/x-icon">
+<link rel="icon" href="{{ "images/favicon.ico" | absURL }}" type="image/x-icon">
 
 <!-- A partial to be overwritten by the user.
      Simply place a custom_head.html into

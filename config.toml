@@ -20,6 +20,8 @@ title = "Casa di Nonna Zaira"
     # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
     favicon = "favicon.ico"
 
+    logo = "images/casa_nonna_zaira_logo.png"
+
     # These "images" are used for the structured data templates. This will show up, when
     # services like Twitter or Slack want to generate a preview of a link to your site.
     # See https://gohugo.io/templates/internal#twitter-cards and https://gohugo.io/templates/internal#open-graph.
@@ -41,4 +43,7 @@ title = "Casa di Nonna Zaira"
     description = "La tua casa - lontana da casa"
 
     [params.meta]
-        keywords = "some, keywords, for, seo, you, know, google, duckduckgo, and, such"
+        title = "Casa Nonna Zaira - Ingurtosu"
+        keywords = "ingurtosu, casa vacanza, arbus, piscinas, marina di arbus, natura, dune, affitto, estate, mare"
+        description = "Casa Nonna Zaira - Ingurtosu: la tua casa vacanza"
+        site = "https://casanonnazaira.it"
